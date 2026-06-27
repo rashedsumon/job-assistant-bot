@@ -15,8 +15,7 @@ if "dataset_msg" not in tf.session_state:
         tf.session_state.dataset_df = df
         tf.session_state.dataset_msg = msg
 
-tf.sidebar.success(tf.session_state.dataset_msg)
-model = AssistantWorkflowModel(dataset_df=tf.session_state.get("dataset_df"))
+
 
 # Main Module Tabs Navigation
 tab1, tab2, tab3, tab4 = tf.tabs([
